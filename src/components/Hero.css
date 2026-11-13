@@ -1,0 +1,86 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 50px;
+    background-color: #ffffff;
+    min-height: 450px;
+    gap: 30px;
+}
+
+.heroContent {
+    width: 50%;
+}
+
+.heroContent h1 {
+    font-size: 48px;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.heroContent p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.heroBtn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #e85d04;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.heroBtn:hover {
+    background-color: #c94b00;
+}
+
+.heroImage {
+    width: 45%;
+}
+
+.heroImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* --- Tablet Responsive (992px se choti screens) --- */
+@media (max-width: 992px) {
+    .heroContent h1 {
+        font-size: 38px;
+    }
+}
+
+/* --- Mobile Responsive (768px se choti screens) --- */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse; /* Mobile par image upar aur text neeche aayega */
+        padding: 40px 25px;
+        text-align: center;
+    }
+
+    .heroContent {
+        width: 100%;
+    }
+
+    .heroContent h1 {
+        font-size: 32px;
+    }
+
+    .heroContent p {
+        font-size: 16px;
+    }
+
+    .heroImage {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

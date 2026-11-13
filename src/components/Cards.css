@@ -1,0 +1,59 @@
+.cardsSection {
+    padding: 60px 50px;
+    background-color: #fff8f5;
+    text-align: center;
+}
+
+.cardsSection h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.foodCard {
+    width: 280px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.foodCard:hover {
+    transform: translateY(-8px);
+}
+
+.foodCard img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.foodCard h3 {
+    font-size: 21px;
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.foodCard p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.5;
+}
+
+.foodCard span {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    color: #e85d04;
+    margin-top: 15px;
+}
